@@ -1,4 +1,7 @@
 [user]
   email = "{{ .email }}"
+  name = "{{ .name }}"
+[init]
+  defaultBranch = "main"
 {{ if eq .chezmoi.hostname  "l14" -}}
 {{- end }}

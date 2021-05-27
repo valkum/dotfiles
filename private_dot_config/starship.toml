@@ -1,0 +1,14 @@
+[git_branch]
+symbol ="🌱 "
+truncation_length = 10
+truncation_symbol = ""
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = "[🍒 PICKING](bold red)"
+
+[custom.worktime]
+command = """ tt show --format "{h}h {mm}m" """
+when = "tt status"
+shell = "sh"
+
